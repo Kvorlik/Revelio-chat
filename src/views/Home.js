@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import {Header, LoginScroll} from "../components";
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h1>Welcome to the Tornadoes Website!</h1>
+      <div className="home">
+        <Header isHome={true}/>
+        <LoginScroll/>
       </div>
     );
   }

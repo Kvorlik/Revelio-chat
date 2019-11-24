@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import {Welcome, Chat} from '../components';
+import {Home, Chat} from '../views';
 
 const AppRouter = () => (
   <Switch>
-    <Route exact path='/' component={Welcome}/>
+    <Route exact path='/' component={Home}/>
     <Route path='/chat' component={Chat}/>
   </Switch>
 )
