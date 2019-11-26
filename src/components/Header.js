@@ -8,7 +8,7 @@ class Header extends Component {
       link = <li><Link to='/'>Logout</Link></li>;
     }
     else {
-      link = <li><Link to='/chat'>Log in</Link></li>
+      link = <li><Link to='/chat'>Log as anonimous</Link></li>
     }
 
     return (

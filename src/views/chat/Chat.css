@@ -1,0 +1,8 @@
+.chat__continer {
+  width: 400px;
+  min-height: 600px;
+  padding: 50px;
+  margin: 100px auto 0 auto;
+  background-color: #fff;
+  border-radius: 6px;
+}

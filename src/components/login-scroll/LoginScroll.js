@@ -20,7 +20,6 @@ class LoginScroll extends Component {
     if (this.state.name) {
       this.setState({feedback: ''});
       if (history) history.push('/chat', this.state.name);
-      console.log(history);      
     } else {
       this.setState({feedback: 'You must enter your name'});
     }

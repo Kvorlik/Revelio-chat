@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Header, LoginScroll} from "../components";
+import {Header, LoginScroll} from "../../components";
 
 class Home extends Component {
   render() {

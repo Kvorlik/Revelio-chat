@@ -12,6 +12,6 @@ var firebaseConfig = {
     measurementId: "G-GEM9LLVHJ2"
   };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
 
 export default firebaseApp.firestore();

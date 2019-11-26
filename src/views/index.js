@@ -1,2 +1,2 @@
-export {default as Home} from '../views/Home';
-export {default as Chat} from '../views/Chat';
+export {default as Home} from './home/Home';
+export {default as Chat} from './chat/Chat';
