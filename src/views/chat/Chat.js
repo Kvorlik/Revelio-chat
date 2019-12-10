@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import { Header, NewMessage, MessagesList } from "../../components";
+import { Link, withRouter } from 'react-router-dom';
+import { NewMessage, MessagesList, FlexSpacer } from "../../components";
 import './Chat.css';
 
 class Chat extends Component {
@@ -22,14 +22,19 @@ class Chat extends Component {
   render() {
     return (
       <div className="chat">
-        <Header isHome={false}/>
-        <div className="chat__continer">
-          <h1>Chat</h1>
-          <h3>Name: {this.state.name}</h3>
+        <div className="chat__header">
+          <h1 className="chat__title">Chat</h1>
+          <FlexSpacer/>
+          <h3 className="chat__logout">
+            {this.state.name} |&nbsp;
+            <Link to='/'>logout</Link>
+          </h3>
+        </div>
+        <div className="chat__messages-list">
           <MessagesList/>
-          <div className="container__new-message">
-            <NewMessage name={this.state.name}/>
-          </div>
+        </div>
+        <div className="chat__new-message">
+          <NewMessage name={this.state.name}/>
         </div>
       </div>
     );

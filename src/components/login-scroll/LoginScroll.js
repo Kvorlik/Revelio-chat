@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './LoginScroll.css';
 
 class LoginScroll extends Component {
@@ -46,6 +46,9 @@ class LoginScroll extends Component {
           {(history)
           ? <button type="button" onClick={this.enterChat}>Enter chat</button>
           : <p>Chat unavailable</p>}
+          <p className="form__anon-login">
+            <Link to='/chat'>Log as anonimous</Link>
+          </p>
         </form>
       </div>
     );

@@ -1,8 +1,37 @@
-.chat__continer {
-  width: 400px;
-  min-height: 600px;
+.chat {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 80%;
+  height: 70vh;
   padding: 50px;
   margin: 100px auto 0 auto;
   background-color: #fff;
   border-radius: 6px;
+}
+
+.chat__messages-list {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.chat__header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.chat__title,
+.chat__logout {
+  display: inline-block;
+  width: fit-content;
+  margin: 0;
+}
+
+.chat__logout {
+  align-self: center;
+}
+
+.chat__logout a {
+  color: black;
 }
