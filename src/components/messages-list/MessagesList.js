@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './MessagesList.css';
 import db from '../../firebase/init';
+import moment from 'moment';
 
 class MessagesList extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class MessagesList extends Component {
                 id: doc.id,
                 name: doc.data().name,
                 message: doc.data().message,
-                timestamp: doc.data().timestamp
+                timestamp: moment(doc.data().timestamp).format('lll')
               }
             ]
           });
