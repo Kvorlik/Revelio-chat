@@ -23,7 +23,7 @@ class MessagesList extends Component {
                 id: doc.id,
                 name: doc.data().name,
                 message: doc.data().message,
-                timestamp: moment(doc.data().timestamp).format('lll')
+                timestamp: moment(doc.data().timestamp).calendar()
               }
             ]
           });
@@ -34,10 +34,10 @@ class MessagesList extends Component {
 
   render() {
     const messagesPool = this.state.messages.map(message =>
-      <li key={message.id}>
-        <span>{message.name} </span>
-        <span>{message.message} </span>
-        <span>{message.timestamp}</span>
+      <li className="messages-list__message" key={message.id}>
+        <span className="message__name">{message.name} </span>
+        <span className="message__content">{message.message} </span>
+        <span className="message__time">{message.timestamp}</span>
       </li>
     );
     return (
