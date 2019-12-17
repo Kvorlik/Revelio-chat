@@ -25,10 +25,10 @@ class Chat extends Component {
         <div className="chat__header">
           <h1 className="chat__title">Chat</h1>
           <FlexSpacer/>
-          <h3 className="chat__logout">
+          <h2 className="chat__logout">
             {this.state.name} |&nbsp;
             <Link to='/'>logout</Link>
-          </h3>
+          </h2>
         </div>
         <div className="chat__messages-list">
           <MessagesList/>
