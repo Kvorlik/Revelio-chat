@@ -48,6 +48,7 @@ class NewMessage extends Component {
             placeholder="Type here"
             value={this.state.message}
             onChange={this.onChangeMessage}
+            autoFocus
           />
           <p>{this.state.feedback}</p>
         </form>

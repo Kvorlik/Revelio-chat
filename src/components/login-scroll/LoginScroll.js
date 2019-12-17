@@ -41,6 +41,7 @@ class LoginScroll extends Component {
             name="name"
             value={this.state.name}
             onChange={this.onChangeName}
+            autoFocus
           />
           <p className="form__feedback">{this.state.feedback}</p>
           {(history)
