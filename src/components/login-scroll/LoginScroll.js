@@ -42,7 +42,7 @@ class LoginScroll extends Component {
             value={this.state.name}
             onChange={this.onChangeName}
           />
-          <p>{this.state.feedback}</p>
+          <p className="form__feedback">{this.state.feedback}</p>
           {(history)
           ? <button type="button" onClick={this.enterChat}>Enter chat</button>
           : <p>Chat unavailable</p>}
