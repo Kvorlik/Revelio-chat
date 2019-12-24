@@ -4,3 +4,4 @@ export {default as LoginScroll} from './login-scroll/LoginScroll';
 export {default as NewMessage} from './new-message/NewMessage';
 export {default as MessagesList} from './messages-list/MessagesList';
 export {default as FlexSpacer} from './flex-spacer/FlexSpacer';
+export {default as SingleMessage} from './single-message/SingleMessage';

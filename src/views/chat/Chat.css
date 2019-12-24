@@ -11,8 +11,21 @@
 }
 
 .chat__messages-list {
+  position: relative;
   flex-grow: 1;
   overflow-y: scroll;
+}
+
+.chat__messages-list::-webkit-scrollbar {
+  width: 3px;
+}
+
+.chat__messages-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat__messages-list::-webkit-scrollbar-thumb {
+  background: rgb(26, 26, 26);
 }
 
 .chat__header {
@@ -22,10 +35,25 @@
 }
 
 .chat__title,
-.chat__logout {
+.chat__logout,
+.chat__swap-view {
   display: inline-block;
   width: fit-content;
   margin: 0;
+}
+
+.chat__swap-view {
+  margin-right: 50px;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.chat__swap-view:focus {
+  outline: none;
 }
 
 .chat__logout {
