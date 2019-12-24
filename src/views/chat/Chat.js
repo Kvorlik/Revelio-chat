@@ -28,11 +28,6 @@ class Chat extends Component {
     this.onChangeView = this.onChangeView.bind(this);
   }
 
-  componentDidMount() {
-    var element = document.getElementsByClassName("chat__messages-list");
-    element.scrollTop = element.scrollHeight - element.clientHeight;
-  }
-
   onChangeView() {
     this.setState({showHistoryView: !this.state.showHistoryView});
   }
