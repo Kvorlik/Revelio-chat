@@ -27,10 +27,6 @@
   transition: 1s;
 }
 
-.login-scroll__form input:focus {
-  box-shadow: inset 0px -20px 28px -16px rgba(0,0,0,0.81);
-}
-
 .login-scroll__form input:focus,
 .login-scroll__form input:active,
 .login-scroll__form input:hover,
@@ -61,9 +57,9 @@
 
 .login-scroll__form button:hover {
   text-shadow:
-  0px 0px 15px rgba(255, 17, 0, 1),
-  0px 0px 15px rgba(255, 17, 0, 1),
-  0px 0px 15px rgba(255, 17, 0, 1);
+  0px 0px 15px #ffffff,
+  0px 0px 15px #ffffff,
+  0px 0px 15px #ffffff;
 }
 
 .form__anon-login {
